@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*--RESET--*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--HEADER--*/
+
+.contenedor {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    grid-template-rows: 25px 25px 25px 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer";
+    gap: 10px;
+}
+
+@media screen and (max-widht: 1069px){
+.contenedor{
+grid-template-columns: 1fr, 1fr,1fr;
+grid-template-rows: 200px 400px 150px;
+grid-template-areas: 
+"nav header header"
+"nav main aside"
+"footer footer footer"
+;
+}
+}
+@media screen and (min-widht:400px){
+    .contenedor{
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 150px 300px 80px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer"
+        ;
+}
+}
+header h1 {
+    margin-left: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+    color: white;
+}
+header nav ul {
+    list-style: none;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+}
+header nav ul li a{
+    font-style: italic;
+    text-decoration: none;
+    color: greenyellow;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 15px;
+}
+
+/*--MAIN--*/
+.hero {
+    background-image: url("../img/fondo.jpg") ;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.segundo h1{
+    margin: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+}
+.tercero h1{
+    margin: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+}
+.cuarto h1{
+    margin: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+}
+.quinto h1{
+    margin: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+}
+iframe{
+    margin:25px;
+    margin-left: 25px;
+}
+form{
+    margin: 25px;
+    font-style: italic ;
+    font-weight:100 ;
+    font-family:'Poppins', sans-serif ;
+};
+.quinto form div .gender h3{
+    margin-top:25px;
+}
+main a {
+    color: yellow;
+}
+.hero h2{
+    font-size: 60px;
+    color: yellowgreen;
+}
+.hero p{
+    font-size: 40px;
+}
+
+.hero a{
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+}
+.bienvenidos h2{
+    margin-bottom:25px;
+}
+.producto h2{
+    margin-left: 25px;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.producto div .producto_card{
+    width: 200px;
+    height: 230px;
+    border: 1px black solid;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.producto div img{
+    width: 100px;
+    height: 120px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.producto div h3{
+    margin-bottom: 20px;
+    margin-left: 65px;
+    align-items: start;
+}
+.producto div a{
+    margin-top: 250px;
+    margin-left: 55px;
+    background-color: black;
+    color: yellowgreen;
+    padding: 10px;
+}
+.producto div img{
+    width: 100px;
+    height: 120px;
+    margin-left: 45px;
+    margin-top: 25px;
+}
+.producto div a:hover{
+    background-color: yellowgreen;
+    color: black;
+    transition: 1s;
+}
+
+.galeria h2{
+    margin-left: 25px;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.galeria div .item-galeria{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 25px;
+    gap: 25px;
+    justify-content: space-around;
+}
+.galeria div img{
+    width: 220px;
+    height: 150px;
+}
+main .bienvenidos{
+    margin-left: 25px;
+}
+/*--FOOTER--*/
+
+footer {
+    margin: 25px;
+    border: 1px solid;
+    font-family:'Poppins', sans-serif ;
+}
+
+footer ul{
+    margin-left:25px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    list-style: none;
+    text-decoration: none;
+    text-decoration-style: none;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a{
+    display: inline-block;
+    color: black;
+    font-style: italic;
+    margin-right: 20px;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p{
+    margin-left: 25px;
+    margin-bottom:25px;
+}
+footer div{
+    margin-left:25px;
+}
+
+.volver ul li a:hover{
+    background-color: rgb(219, 210, 210);
+    color: red;
+    font-weight: 200;
+    transition: 1s;
+}
+
