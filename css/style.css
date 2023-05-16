@@ -184,23 +184,34 @@ main a {
     transition: 1s;
 }
 
-.galeria h2{
-    margin-left: 25px;
-    margin-top:25px;
-    margin-bottom:25px;
+.galeria{
+    display:grid;
+    grid-template-columns: repeat (3,1fr);
+    grid-auto-rows: 100px;
 }
-.galeria div .item-galeria{
-    width: 200px;
-    height: 230px;
-    display: inline-block;
-    margin-top: 25px;
-    margin-left: 25px;
-    gap: 25px;
-    justify-content: space-around;
+.galeria h2{
+    margin: 25px;
 }
 .galeria div img{
-    width: 220px;
-    height: 150px;
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 25px;
+}
+.galeria h3{
+    margin-left:25px;
+}
+.item-galeria1{
+    grid-row: span 3;
+}
+.item-galeria2{
+    grid-row: span 3;
+}
+.item-galeria3{
+    grid-row: span 3;
+}
+.item-galeria4{
+    grid-row: span 3;
 }
 main .bienvenidos{
     margin-left: 25px;
