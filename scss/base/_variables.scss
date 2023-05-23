@@ -1,0 +1,46 @@
+//*VARIABLES
+$color-principal:black;
+$color-secundario: yellowgreen;
+$color-terciario: white;
+
+//*LISTAS
+$colores:
+black,
+yellowgreen,
+white;
+$font-size:
+10px,
+12px,
+15px,
+20px;
+
+//*OPERACIONES
+$ancho: 400px;
+$alto:400px;
+
+//*MAPAS
+$boton:(
+    bg-boton: yellowgreen,
+    borde-linea: black solid,
+    espacio: 5px,
+    bordes-redondeados: 10%,
+    color-texto: black,
+    estilo-texto: none,
+    decoracion-texto: none,
+);
+
+//*EXTENDS
+// % = placeholder
+%flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+//*MIXINS
+@mixin flex ($flex, $justify, $aling){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $aling;
+}

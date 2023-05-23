@@ -1,0 +1,41 @@
+.volver{
+    background-color: yellowgreen;
+    border: 1px solid;
+    font-family: 'Poppins', sans-serif;
+    ul{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        list-style: none;
+        text-decoration: none;
+        text-decoration-style: none;
+        li{
+            display: inline-block;
+            a{
+                display: inline-block;
+                color: black;
+                font-style: italic;
+                text-decoration: none;
+                text-decoration-style: none;
+                text-align: center;
+                padding: 5px;
+            }
+        }
+    }
+    p{
+        margin-bottom: 25px;
+        margin-left:25px;
+    }
+    div{
+        margin-left: 25px;
+        margin-bottom: 25px;
+        a{
+            &:hover{
+                background-color:black;
+                color: yellowgreen;
+                border-radius: 10%;
+                font-weight: 200;
+                transition: 1s;
+            }
+        }
+    }
+}

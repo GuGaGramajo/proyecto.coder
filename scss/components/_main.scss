@@ -1,0 +1,377 @@
+/*INDEX*/
+.hero {
+    background-image: url("../img/fondo.jpg");
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        background-color: $color-secundario;
+        margin-top: 50px;
+        font-size: 60px;
+        color: nth($colores, 1);
+        border: black solid;
+        padding: 5px;
+    }
+    p{
+        margin-top: 5px;
+        font-size: 30px;
+        color: nth($colores, 3);
+        padding: 2px;
+    }
+    a{
+        color: yellowgreen;
+        background-color: black;
+        border: yellowgreen solid;
+        padding: 10px;
+        border-radius: 10%;
+        &:hover{
+            background-color:yellowgreen;
+            border: black solid;
+            color: black;
+            font-weight: 200;
+            transition: 1s;
+        }
+    }
+}
+.bienvenidos{
+    background-color: black;
+    background-size: cover;
+    @extend %flex;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    h2{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        align-items: center;
+        font-weight: 50px;
+        color: yellowgreen;
+    }
+    p{
+        margin-left: 60px;
+        margin-right: 60px;
+        font-size: 25px;
+        color: white;
+    }
+}
+.tarjeta{
+    background-color: black;
+    background-size: cover;
+    @extend %flex;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    h2{
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: yellowgreen;
+    }
+    .destacados{
+        div{
+            .tarjeta_card{
+                background-color: black;
+                width: 210px;
+                height: 300px;
+                border: 5px yellowgreen solid;
+                margin: 25px;
+                border-radius: 5%;
+                transition: 2s;
+                transition-delay: 0.5s;
+                &:hover{
+                    transform: scale (1.1);
+                }
+                @include flex (inline-block, center, center);
+                div{
+                    img{
+                        width: $ancho/2;
+                        height: $alto/2;
+                    }
+                    h3{
+                        margin-top:15px;
+                        margin-bottom: 15px;
+                        margin-left: 55px;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.galeria{
+    background-color: black;
+    background-size: cover;
+    @extend %flex;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    h2{
+        margin:25px;
+        color: yellowgreen;
+    }
+    .item-galeria{
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 5%;
+        div{
+            img{
+                margin:10px;
+                display: flex;
+                width: 280px;
+                height: 200px;
+                border-radius: 5%;
+            }
+            a{
+                @extend %flex;
+                margin: 25px;
+                color: yellowgreen;
+                list-style: none;
+                text-decoration: none;
+                text-decoration-style: none;
+            }
+        }
+    }
+}
+/*ACERCA DE*/
+.acerca{
+    background-color: black;
+    background-size: cover;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    @extend %flex;
+    
+    h2{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: yellowgreen;
+        border: yellowgreen solid;
+        padding: 15px;
+    }
+    p{
+        color: white;
+    }
+}
+.acerca-video{
+    background-color: black;
+    @include flex (flex, center, center);
+    div{
+        iframe{
+            @include flex (flex, center, center);
+            margin-top: 25px;
+        }
+    }
+}
+.descripcion-video{
+    background-color: black;
+    color: white;
+    @include flex (flex, center, center);
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    p{
+        margin:25px;
+    }
+}
+/*PRODUCTOS*/
+.producto{
+    background-color: black;
+    background-size: cover;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    @extend %flex;
+    h2{
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: yellowgreen;
+        border: yellowgreen solid;
+        padding: 15px;
+    }
+    .producto_card{
+        background-color: white;
+        width: 270px;
+        height: 300px;
+        border: 5px yellowgreen solid;
+        display: inline-block;
+        margin: 25px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5%;
+        div{
+            img{
+                width: 250px;
+                height: 200px;
+                border-radius: 5%;
+                margin-left: 5px;
+                margin-top: 5px;
+            }
+            h3{
+                margin-top:15px;
+                margin-bottom: 15px;
+                margin-left: 55px;
+                align-items: center;
+                justify-content: center;
+                font-size: 90%;
+            }
+            a{
+                margin-top:45px;
+                margin-bottom: 15px;
+                margin-left: 65px;
+                align-items: center;
+                background-color: map-get($boton, bg-boton);
+                border: map-get($boton, borde-linea);
+                color: map-get($boton, color-texto);
+                padding: map-get($boton, espacio);
+                border-radius: map-get($boton, bordes-redondeados);
+                font-style: map-get($boton, estilo-texto);
+                text-decoration: map-get($boton, decoracion-texto);
+                &:hover{
+                    background-color: black;
+                    color: yellowgreen;
+                    transition: 1s;
+                }
+            }
+
+        }
+    }
+}
+/*SERVICIOS*/
+.servicios{
+    background-color: black;
+    background-size: cover;
+    @extend %flex;
+    font-style: italic;
+    font-weight: 100;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    h2{
+        margin: 25px;
+        color: yellowgreen;
+        border: yellowgreen solid;
+        padding: 15px;
+    }
+}
+/*CONTACTO*/
+.form{
+    background-color: yellowgreen;
+    background-size: cover;
+    @extend %flex;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    h2{
+        margin:25px;
+    }
+}
+.contacto{
+    @extend %flex;
+    background-color: black;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    .formulario{
+        div{
+            .carga-formulario{
+                form{
+                    .item-formulario{
+                        div{
+                            label{
+                                margin-top: 25px;
+                                margin-left: 25px;
+                                margin-bottom: 10px
+                            }
+                            .nombre{
+                                input{
+                                    margin-left:45px;
+                                }
+                            }
+                            .apellido{
+                                input{
+                                    margin-left:46px;    
+                                }
+                            }
+                            .email{
+                                input{
+                                    margin-left:58px;
+                                }
+                            }
+                            .pass{
+                                input{
+                                    margin-left: 17px;
+                                }
+                            }
+                            
+                        }
+                    .consulta{
+                        margin:25px;
+                        .enviar{
+                            .send{
+                                background-color: yellowgreen;
+                                color: black;
+                                padding: 5px;
+                                border-radius: 10%;
+                                &:hover{
+                                    background-color:black;
+                                    border: yellowgreen solid;
+                                    color: yellowgreen;
+                                    border-radius: 10%;
+                                    font-weight: 200;
+                                    transition: 1s;
+                                }
+                            }
+                            .delete{
+                                background-color: yellowgreen;
+                                color: black;
+                                padding: 5px;
+                                border-radius: 10%;
+                                &:hover{
+                                    background-color:black;
+                                    border: yellowgreen solid;
+                                    color: yellowgreen;
+                                    border-radius: 10%;
+                                    font-weight: 200;
+                                    transition: 1s;
+                                }
+                            }
+                        }
+                    }    
+                    }
+                }
+                
+            }
+        }
+    }
+}
+.titulo-mapa{
+    @extend %flex;
+    background-color: black;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.mapa{
+    @extend %flex;
+    background-color: black;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    iframe{
+        margin: 25px;
+    }
+}

@@ -1,72 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Escuela de Tenis Atleticos|Contacto</title>
+    </head>
+    <body>
+        <!--BARRA DE EXPLORACIÓN HAMBURGUESA-->
+        <header class="contenedor_principal">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <img src="../img/icono.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    <a class="navbar-brand" href="../index.html">INICIO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./acercade.html">ACERCA DE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
 <body>
-    <header class="contenedor">
-        <!--CABECERA-->
-        <h1 class="encabezado">SEGUNDA ENTREGA</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./acercade.html">ACERCA DE</a></li>
-                <li><a href="./productos.html">PRODUCTOS</a></li>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
 <main>
     <!--FORMULARIO-->
-    <section class="quinto">
-        <h1>REGISTRATE</h1>
-        <form class= "formulario" action="" method="" enctype="">
+    <section class="form">
+        <h2>Registrate, ingresa y dejanos tu consulta</h2>
+    </section>
+    <section class="contacto">
+    <div class="formulario">
+        <form class= "carga-formulario" action="" method="" enctype="">
             <!--LLENAR FORMULARIO-->
-            <div>
-                <label for="nombre">NOMBRE</label>
-                <input type="text" name="nombre" id="nombre">
+            <div class="item-formulario">
+                <label for="nombre">Nombre</label>
+                <input class="nombre" type="text" name="nombre" id="nombre">
             </div>
-            <div>
-                <label for="apellido">APELLIDO</label>
-                <input type="text" name="apellido" id="apellido">
+            <div class="item-formulario">
+                <label for="apellido">Apellido</label>
+                <input class="apellido" type="text" name="apellido" id="apellido">
             </div>
-            <div>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
+            <div class="item-formulario">
+                <label for="email">e-mail</label>
+                <input class="email" type="email" name="email" id="email">
             </div>
-            <div>
-                <label for="password">CONTRASEÑA</label>
-                <input type="password" name="password" id="password" >
+            <div class="item-formulario">
+                <label for="password">Contraseña</label>
+                <input class="pass" type="password" name="password" id="password" >
             </div>
-            <div class="gender">
-                <!--DESPLEGABLE-->
-                <h3>Genero</h3>
+            <div class="item-formulario">
                 <div>
-                    <label for="masculino">MASCULINO</label>
+                    <label for="masculino">Masculino</label>
                     <input type="radio" name="genero">
-                    <label for="femenino">FEMENINO</label>
+                    <label for="femenino">Femenino</label>
                     <input type="radio" name="genero">
-                    <label for="otro">OTRO</label>
+                    <label for="otro">Otro</label>
                     <input type="radio" name="genero">
                 </div>
             </div>
-            <div>
-                <h3>ESCRIBINOS TU CONSULTA</h3>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="consulta">
+                <h3>Escribinos tu consulta</h3>
+                <textarea name="" id="" cols="40" rows="5"></textarea>
             </div>
-                <div>
-                <input type="submit">
-                <input type="reset">
+            <div class="enviar">
+                <input class="send" type="submit">
+                <input class="delete"type="reset">
             </div>
         </form>
+    </div>
     </section>
-    <section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12186.114347986724!2d-65.38499059437846!3d-24.7627843884365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3f0f15244db%3A0xdd0b92799939fa03!2sClub%20La%20Chacra!5e0!3m2!1ses-419!2sar!4v1680185894635!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    <section class="titulo-mapa">
+        <h3>Dónde podés encontrarnos?</h3>
+    </section>
+    <section class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8870.686520383935!2d-65.40291988856595!3d-24.744452955162743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc15cc0cda17d%3A0xb5b7105f5625bd1e!2sAtleticos!5e0!3m2!1ses!2sar!4v1684793293475!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
     </section>
 </main>
 <footer class="volver">
