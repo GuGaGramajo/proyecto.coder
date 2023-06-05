@@ -1,70 +1,22 @@
-/*--RESET--*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+/*--RESET--*/
 * {
   margin: 0;
   padding: 0; }
 
-.bienvenidos, .tarjeta, .galeria, .galeria .item-galeria div a, .acerca, .producto, .servicios, .form, .contacto, .titulo-mapa, .mapa {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-/*--HEADER SIN BOOTSTRAP--*/
+/*BARRA DE NAVEGACION HAMBURGUESA*/
 .contenedor_principal {
   position: sticky;
   top: 0;
   justify-content: space-between;
   grid-template-rows: 25px 25px 25px 25px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header"
-  "nav nav nav"
-  "main main aside"
-  "footer footer footer";
-  gap: 10px; }
-
-.contenedor_principal img {
-  width: 25px;
-  height: 25px;
-  margin-right: 5px; }
-
-.contenedor {
-  background-color: black;
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  grid-template-rows: 25px 25px 25px 25px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header"
- "nav nav nav"
- "main main aside"
- "footer footer footer";
-  gap: 10px; }
-
-header h1 {
-  margin-left: 25px;
-  font-style: italic;
-  font-weight: 100;
-  font-family: 'Poppins', sans-serif;
-  color: white; }
-
-header nav ul {
-  list-style: none;
-  font-style: italic;
-  font-weight: 100;
-  font-family: 'Poppins', sans-serif; }
-
-header nav ul li a {
-  font-style: italic;
+  grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+  gap: 10px;
   text-decoration: none;
-  color: greenyellow; }
+  text-align: none; }
 
-header nav ul li {
-  display: inline-block;
-  margin: 15px; }
-
-/*INDEX*/
+/*IMAGEN+TITULO PRINCIPAL*/
 .hero {
   background-image: url("../img/fondo.jpg");
   width: 100%;
@@ -78,6 +30,17 @@ header nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .hero .logo {
+    margin-top: 15px;
+    width: 280px;
+    height: 180px; }
+  .hero h1 {
+    margin-top: 15px;
+    background-color: black;
+    border: yellowgreen solid;
+    color: yellowgreen;
+    font-size: 60px;
+    padding: 10px; }
   .hero h2 {
     background-color: yellowgreen;
     margin-top: 50px;
@@ -88,8 +51,11 @@ header nav ul li {
   .hero p {
     margin-top: 5px;
     font-size: 30px;
+    font-weight: 800;
     color: white;
-    padding: 2px; }
+    padding: 2px;
+    -webkit-text-fill-color: yellowgreen;
+    -webkit-text-stroke: 2px black; }
   .hero a {
     color: yellowgreen;
     background-color: black;
@@ -101,11 +67,18 @@ header nav ul li {
       border: black solid;
       color: black;
       font-weight: 200;
-      transition: 1s; }
+      transition: 1.5s;
+      transform: scale(1.1); }
 
+/*BIENVENIDOS*/
 .bienvenidos {
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-variant: none;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif; }
@@ -121,9 +94,14 @@ header nav ul li {
     font-size: 25px;
     color: white; }
 
+/*TARJETAS*/
 .tarjeta {
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif; }
@@ -132,34 +110,38 @@ header nav ul li {
     margin-top: 25px;
     margin-bottom: 25px;
     color: yellowgreen; }
-  .tarjeta .destacados div .tarjeta_card {
+  .tarjeta div .tarjeta_card {
     background-color: black;
     width: 210px;
     height: 300px;
     border: 5px yellowgreen solid;
-    margin: 25px;
-    border-radius: 5%;
-    transition: 2s;
-    transition-delay: 0.5s;
     display: inline-block;
+    margin: 25px;
+    align-items: center;
     justify-content: center;
-    align-items: center; }
-    .tarjeta .destacados div .tarjeta_card:hover {
-      transform: scale 1.1; }
-    .tarjeta .destacados div .tarjeta_card div img {
+    border-radius: 5%; }
+    .tarjeta div .tarjeta_card img {
       width: 200px;
       height: 200px; }
-    .tarjeta .destacados div .tarjeta_card div h3 {
+    .tarjeta div .tarjeta_card h3 {
       margin-top: 15px;
       margin-bottom: 15px;
       margin-left: 55px;
       align-items: center;
       justify-content: center;
       color: white; }
+    .tarjeta div .tarjeta_card:hover {
+      transition: 1.5s;
+      transform: scale(1.1); }
 
+/*GALERIA DE FOTOS*/
 .galeria {
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif; }
@@ -171,23 +153,22 @@ header nav ul li {
     align-items: center;
     justify-content: space-around;
     border-radius: 5%; }
-    .galeria .item-galeria div img {
+    .galeria .item-galeria img {
       margin: 10px;
       display: flex;
       width: 280px;
       height: 200px;
-      border-radius: 5%; }
-    .galeria .item-galeria div a {
-      margin: 25px;
-      color: yellowgreen;
-      list-style: none;
-      text-decoration: none;
-      text-decoration-style: none; }
+      border-radius: 5%;
+      margin-bottom: 65px; }
 
 /*ACERCA DE*/
 .acerca {
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif; }
@@ -201,20 +182,21 @@ header nav ul li {
     color: white; }
 
 .acerca-video {
-  background-color: black;
   display: flex;
+  flex-wrap: wrap;
+  background-color: black;
   justify-content: center;
   align-items: center; }
-  .acerca-video div iframe {
+  .acerca-video iframe {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25px; }
 
 .descripcion-video {
+  display: flex;
   background-color: black;
   color: white;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-style: italic;
@@ -227,10 +209,14 @@ header nav ul li {
 .producto {
   background-color: black;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif; }
-  .producto h2 {
+  .producto h1 {
     margin-left: 25px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -247,20 +233,23 @@ header nav ul li {
     align-items: center;
     justify-content: center;
     border-radius: 5%; }
-    .producto .producto_card div img {
+    .producto .producto_card:hover {
+      transition: 1.5s;
+      transform: scale(1.1); }
+    .producto .producto_card img {
       width: 250px;
       height: 200px;
       border-radius: 5%;
       margin-left: 5px;
       margin-top: 5px; }
-    .producto .producto_card div h3 {
+    .producto .producto_card h3 {
       margin-top: 15px;
       margin-bottom: 15px;
       margin-left: 55px;
       align-items: center;
       justify-content: center;
       font-size: 90%; }
-    .producto .producto_card div a {
+    .producto .producto_card a {
       margin-top: 45px;
       margin-bottom: 15px;
       margin-left: 65px;
@@ -272,81 +261,145 @@ header nav ul li {
       border-radius: 10%;
       font-style: none;
       text-decoration: none; }
-      .producto .producto_card div a:hover {
+      .producto .producto_card a:hover {
         background-color: black;
         color: yellowgreen;
-        transition: 1s; }
+        transition: 1.5s;
+        transform: scale(1.1); }
 
 /*SERVICIOS*/
 .servicios {
+  background-color: black; }
+  .servicios .servicio {
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif; }
+    .servicios .servicio h1 {
+      margin-left: 25px;
+      margin-top: 25px;
+      color: yellowgreen;
+      border: yellowgreen solid;
+      padding: 15px; }
+
+/*GALERIA DE FOTOS CON BOOTSTRAP*/
+.carousel {
   background-color: black;
-  background-size: cover;
-  font-style: italic;
-  font-weight: 100;
-  color: white;
-  font-family: 'Poppins', sans-serif; }
-  .servicios h2 {
-    margin: 25px;
-    color: yellowgreen;
-    border: yellowgreen solid;
-    padding: 15px; }
+  width: 100%px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .carousel .carousel-indicators {
+    justify-content: center;
+    align-items: center;
+    margin: 65px; }
+  .carousel .carousel-inner {
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    margin: 65px; }
+    .carousel .carousel-inner .carousel-item img {
+      width: 600px;
+      height: 400px;
+      justify-content: space-between;
+      align-items: center; }
+    .carousel .carousel-inner .carousel-item h5 {
+      font-size: 25px;
+      font-weight: 800;
+      -webkit-text-fill-color: yellowgreen;
+      -webkit-text-stroke: 2px black; }
+    .carousel .carousel-inner .carousel-item p {
+      font-size: 20px;
+      font-weight: 800;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 1.5px black; }
 
 /*CONTACTO*/
+/*ENCABEZADO*/
 .form {
   background-color: yellowgreen;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-style: italic;
   font-weight: 100;
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  /*DEJANOS TU CONSULTA*/ }
   .form h2 {
-    margin: 25px; }
+    margin: 25px;
+    border: black solid;
+    padding: 15px; }
 
+/*FORMULARIO*/
 .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   font-style: italic;
   font-weight: 100;
   font-family: 'Poppins', sans-serif;
   color: white; }
-  .contacto .formulario div .carga-formulario form .item-formulario div label {
+  .contacto .item-formulario label {
     margin-top: 25px;
     margin-left: 25px;
     margin-bottom: 10px; }
-  .contacto .formulario div .carga-formulario form .item-formulario div .nombre input {
+  .contacto .item-formulario .nombre {
     margin-left: 45px; }
-  .contacto .formulario div .carga-formulario form .item-formulario div .apellido input {
+  .contacto .item-formulario .apellido {
     margin-left: 46px; }
-  .contacto .formulario div .carga-formulario form .item-formulario div .email input {
+  .contacto .item-formulario .email {
     margin-left: 58px; }
-  .contacto .formulario div .carga-formulario form .item-formulario div .pass input {
+  .contacto .item-formulario .pass {
     margin-left: 17px; }
-  .contacto .formulario div .carga-formulario form .item-formulario .consulta {
+  .contacto .consulta {
     margin: 25px; }
-    .contacto .formulario div .carga-formulario form .item-formulario .consulta .enviar .send {
+  .contacto .enviar {
+    gap: 50px;
+    margin: 25px;
+    margin-bottom: 25px; }
+    .contacto .enviar .send {
       background-color: yellowgreen;
       color: black;
       padding: 5px;
       border-radius: 10%; }
-      .contacto .formulario div .carga-formulario form .item-formulario .consulta .enviar .send:hover {
+      .contacto .enviar .send:hover {
         background-color: black;
         border: yellowgreen solid;
         color: yellowgreen;
         border-radius: 10%;
         font-weight: 200;
-        transition: 1s; }
-    .contacto .formulario div .carga-formulario form .item-formulario .consulta .enviar .delete {
+        transition: 1s;
+        transform: scale(1.1); }
+    .contacto .enviar .delete {
       background-color: yellowgreen;
       color: black;
       padding: 5px;
       border-radius: 10%; }
-      .contacto .formulario div .carga-formulario form .item-formulario .consulta .enviar .delete:hover {
+      .contacto .enviar .delete:hover {
         background-color: black;
         border: yellowgreen solid;
         color: yellowgreen;
         border-radius: 10%;
         font-weight: 200;
-        transition: 1s; }
+        transition: 1s;
+        transform: scale(1.1); }
 
+/*MAPA GOOGLE*/
 .titulo-mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   font-style: italic;
   font-weight: 100;
@@ -354,6 +407,9 @@ header nav ul li {
   color: white; }
 
 .mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   font-style: italic;
   font-weight: 100;
@@ -362,6 +418,7 @@ header nav ul li {
   .mapa iframe {
     margin: 25px; }
 
+/*FOOTER*/
 .volver {
   background-color: yellowgreen;
   border: 1px solid;
@@ -382,236 +439,181 @@ header nav ul li {
         text-decoration-style: none;
         text-align: center;
         padding: 5px; }
+        .volver ul li a:hover {
+          background-color: black;
+          color: yellowgreen;
+          border-radius: 10%;
+          font-weight: 200;
+          transition: 1s; }
   .volver p {
     margin-bottom: 25px;
     margin-left: 25px; }
   .volver div {
     margin-left: 25px;
     margin-bottom: 25px; }
-    .volver div a:hover {
-      background-color: black;
-      color: yellowgreen;
-      border-radius: 10%;
-      font-weight: 200;
-      transition: 1s; }
+    .volver div a img:hover {
+      transform: rotatey(360deg);
+      transition: 3s; }
 
-@media screen and (max-widht: 1069px) {
-  .contenedor {
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
-
-@media screen and (min-widht: 400px) {
-  .contenedor {
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
-
+/*INDEX*/
+/*MAIN*/
 @media screen and (max-widht: 1069px) {
   .hero {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .hero {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .bienvenidos {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .bienvenidos {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .tarjeta {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .tarjeta {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .galeria {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .galeria {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
+/*FOOTER*/
 @media screen and (max-widht: 1069px) {
   .volver {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .volver {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
+/*ACERCA DE*/
 @media screen and (max-widht: 1069px) {
   .acerca {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .acerca {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .acerca-video {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .acerca-video {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
+/*PRODUCTOS*/
 @media screen and (max-widht: 1069px) {
   .producto {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .producto {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
+/*SERVICIOS*/
 @media screen and (max-widht: 1069px) {
-  .servicios {
+  .carousel-inner {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
-  .servicios {
+  .carousel-inner {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
+@media screen and (max-widht: 1069px) {
+  .carousel-item {
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: 200px 400px 150px;
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+
+@media screen and (min-widht: 400px) {
+  .carousel-item {
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 150px 300px 80px;
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+
+/*CONTACTO*/
 @media screen and (max-widht: 1069px) {
   .form {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .form {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .contacto {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .contacto {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .mapa {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header"
- "nav main aside"
- "footer footer footer"; } }
+    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .mapa {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header"
- "nav nav"
- "main aside"
- "footer footer"; } }
+    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }

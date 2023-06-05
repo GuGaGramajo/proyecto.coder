@@ -1,26 +1,5 @@
-.contenedor{
-    @media screen and (max-widht: 1069px){
-        grid-template-columns: 1fr, 1fr, 1fr;
-        grid-template-rows: 200px 400px 150px;
-        grid-template-areas:
-            "nav header header"
-            "nav main aside"
-            "footer footer footer"
-        ;
-    }
-}
-.contenedor{
-    @media screen and (min-widht:400px){
-        grid-template-columns: 1fr, 1fr;
-        grid-template-rows: 150px 300px 80px;
-        grid-template-areas:
-            "header header"
-            "nav nav"
-            "main aside"
-            "footer footer"
-        ;
-    }
-}
+/*INDEX*/
+/*MAIN*/
 .hero {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -31,8 +10,7 @@
             "footer footer footer"
         ;
     }
-}
-.hero{
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -44,6 +22,7 @@
         ;
     }
 }
+
 .bienvenidos {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -54,8 +33,7 @@
             "footer footer footer"
         ;
     }
-}
-.bienvenidos {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -67,6 +45,7 @@
         ;
     }
 }
+
 .tarjeta {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -77,8 +56,7 @@
             "footer footer footer"
         ;
     }
-}
-.tarjeta {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -90,6 +68,7 @@
         ;
     }
 }
+
 .galeria {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -100,8 +79,7 @@
             "footer footer footer"
         ;
     }
-}
-.galeria {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -113,6 +91,7 @@
         ;
     }
 }
+/*FOOTER*/
 .volver {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -123,8 +102,7 @@
             "footer footer footer"
         ;
     }
-}
-.volver {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -136,6 +114,7 @@
         ;
     }
 }
+/*ACERCA DE*/
 .acerca {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -146,8 +125,7 @@
             "footer footer footer"
         ;
     }
-}
-.acerca {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -159,6 +137,7 @@
         ;
     }
 }
+
 .acerca-video {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -169,8 +148,7 @@
             "footer footer footer"
         ;
     }
-}
-.acerca-video {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -182,6 +160,7 @@
         ;
     }
 }
+/*PRODUCTOS*/
 .producto {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -192,8 +171,7 @@
             "footer footer footer"
         ;
     }
-}
-.producto {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -205,7 +183,8 @@
         ;
     }
 }
-.servicios {
+/*SERVICIOS*/
+.carousel-inner {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
         grid-template-rows: 200px 400px 150px;
@@ -215,8 +194,7 @@
             "footer footer footer"
         ;
     }
-}
-.servicios {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -228,6 +206,30 @@
         ;
     }
 }
+
+.carousel-item {
+    @media screen and (max-widht: 1069px) {
+        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-rows: 200px 400px 150px;
+        grid-template-areas:
+            "nav header header"
+            "nav main aside"
+            "footer footer footer"
+        ;
+    }
+
+    @media screen and (min-widht:400px) {
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 150px 300px 80px;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer"
+        ;
+    }
+}
+/*CONTACTO*/
 .form {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -238,8 +240,7 @@
             "footer footer footer"
         ;
     }
-}
-.form {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -251,6 +252,7 @@
         ;
     }
 }
+
 .contacto {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -261,8 +263,7 @@
             "footer footer footer"
         ;
     }
-}
-.contacto {
+
     @media screen and (min-widht:400px) {
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
@@ -274,6 +275,7 @@
         ;
     }
 }
+
 .mapa {
     @media screen and (max-widht: 1069px) {
         grid-template-columns: 1fr, 1fr, 1fr;
@@ -284,9 +286,9 @@
             "footer footer footer"
         ;
     }
-}
-.mapa {
+
     @media screen and (min-widht:400px) {
+
         grid-template-columns: 1fr, 1fr;
         grid-template-rows: 150px 300px 80px;
         grid-template-areas:
