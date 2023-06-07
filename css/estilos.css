@@ -11,7 +11,10 @@
   justify-content: space-between;
   grid-template-rows: 25px 25px 25px 25px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+  grid-template-areas: "header header header"
+ "nav nav nav"
+ "main main aside"
+ "footer footer footer";
   gap: 10px;
   text-decoration: none;
   text-align: none; }
@@ -89,8 +92,8 @@
     font-weight: 50px;
     color: yellowgreen; }
   .bienvenidos p {
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-size: 25px;
     color: white; }
 
@@ -461,159 +464,224 @@
   .hero {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .hero {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .bienvenidos {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .bienvenidos {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .tarjeta {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .tarjeta {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .galeria {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .galeria {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 /*FOOTER*/
 @media screen and (max-widht: 1069px) {
   .volver {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .volver {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 /*ACERCA DE*/
 @media screen and (max-widht: 1069px) {
   .acerca {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .acerca {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .acerca-video {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .acerca-video {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 /*PRODUCTOS*/
 @media screen and (max-widht: 1069px) {
   .producto {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .producto {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 /*SERVICIOS*/
 @media screen and (max-widht: 1069px) {
   .carousel-inner {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .carousel-inner {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .carousel-item {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .carousel-item {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 /*CONTACTO*/
 @media screen and (max-widht: 1069px) {
   .form {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .form {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .contacto {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .contacto {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
 
 @media screen and (max-widht: 1069px) {
   .mapa {
     grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: 200px 400px 150px;
-    grid-template-areas: "nav header header" "nav main aside" "footer footer footer"; } }
+    grid-template-areas: "nav header header"
+ "nav main aside"
+ "footer footer footer"; } }
 
 @media screen and (min-widht: 400px) {
   .mapa {
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 150px 300px 80px;
-    grid-template-areas: "header header" "nav nav" "main aside" "footer footer"; } }
+    grid-template-areas: "header header"
+ "nav nav"
+ "main aside"
+ "footer footer"; } }
